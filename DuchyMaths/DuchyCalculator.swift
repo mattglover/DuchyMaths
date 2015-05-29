@@ -8,9 +8,9 @@
 
 import Foundation
 
-class DuchyCalculator {
+public class DuchyCalculator {
     
-    func multiplyBy7(value: Int) -> Int {
+    public func multiplyBy7(value: Int) -> Int {
         return value * 7
     }
 }
