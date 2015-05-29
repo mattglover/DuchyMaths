@@ -10,6 +10,7 @@
 		B2081DF01B18F3DB00037F56 /* DuchyMaths.h in Headers */ = {isa = PBXBuildFile; fileRef = B2081DEF1B18F3DB00037F56 /* DuchyMaths.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B2081DF61B18F3DB00037F56 /* DuchyMaths.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2081DEA1B18F3DB00037F56 /* DuchyMaths.framework */; };
 		B2081DFD1B18F3DB00037F56 /* DuchyMathsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2081DFC1B18F3DB00037F56 /* DuchyMathsTests.swift */; };
+		B2081E071B18F4B000037F56 /* DuchyCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2081E061B18F4B000037F56 /* DuchyCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		B2081DF51B18F3DB00037F56 /* DuchyMathsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DuchyMathsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2081DFB1B18F3DB00037F56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2081DFC1B18F3DB00037F56 /* DuchyMathsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuchyMathsTests.swift; sourceTree = "<group>"; };
+		B2081E061B18F4B000037F56 /* DuchyCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuchyCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				B2081DEF1B18F3DB00037F56 /* DuchyMaths.h */,
+				B2081E061B18F4B000037F56 /* DuchyCalculator.swift */,
 				B2081DED1B18F3DB00037F56 /* Supporting Files */,
 			);
 			path = DuchyMaths;
@@ -209,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2081E071B18F4B000037F56 /* DuchyCalculator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +327,7 @@
 		B2081E011B18F3DB00037F56 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -332,12 +337,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		B2081E021B18F3DB00037F56 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
