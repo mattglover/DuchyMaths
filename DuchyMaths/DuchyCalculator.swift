@@ -10,6 +10,10 @@ import Foundation
 
 public class DuchyCalculator {
     
+    public init () {
+        
+    }
+    
     public func multiplyBy7(value: Int) -> Int {
         return value * 7
     }
