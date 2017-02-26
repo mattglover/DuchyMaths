@@ -8,13 +8,13 @@
 
 import Foundation
 
-public class DuchyCalculator {
+open class DuchyCalculator {
     
     public init () {
         
     }
     
-    public func multiplyBy7(value: Int) -> Int {
+    open func multiplyBy7(_ value: Int) -> Int {
         return value * 7
     }
 }
