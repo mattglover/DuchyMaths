@@ -17,4 +17,8 @@ public struct DuchyCalculator {
     public func multiplyBy7(_ value: Int) -> Int {
         return value * 7
     }
+    
+    public func multiplyBy11(_ value: Int) -> Int {
+        return value * 11
+    }
 }
